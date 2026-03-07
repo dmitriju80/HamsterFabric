@@ -1,6 +1,6 @@
 /*1 выполнить все команды без ввода данных
-* 2 добавить вывод
-* 3 добавить ввод
+* 2 добавить вывод - потом
+* 3 добавить ввод - потом
 * 4 команды через interfase
 * */
 
@@ -44,17 +44,14 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-
-        HamsterFactory hamsterFactory = new HamsterFactory();
-        hamsterFactory.start();
-
-
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        HamsterFactory hamsterFactory = new HamsterFactory();
+        hamsterFactory.start();
 
     }
 }
