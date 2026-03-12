@@ -2,6 +2,10 @@ package com.example.hamsterfabric.hamster;
 
 
 
+import com.example.hamsterfabric.interfaceDelete.Client;
+import com.example.hamsterfabric.interfaceDelete.CloseDoor;
+import com.example.hamsterfabric.interfaceDelete.Interface;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -35,6 +39,11 @@ List <Hamster> hamsterband = new ArrayList<>();
                for (Hamster hamster : hamsterband){
                    System.out.println(hamster.toString());
                }
+
+
+                Client client = new Client();
+                //client.set(new CloseDoor());
+                client.send();
 
                 break;//удалить!
             }

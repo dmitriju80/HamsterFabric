@@ -4,7 +4,7 @@ import java.util.Objects;
 
 class Hamster {
 
-    String name;
+    private String name;
 
     public Hamster(String name) {
         this.name = name;
